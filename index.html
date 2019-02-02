@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project Management Tool</title>
+  <link href="main.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Project Management tool</h1>
+  <div id="task-container">
+    <div id="add-task-form" class="task-card">
+      Title: <input type="text" id="title">
+      First name: <input type="text" id="firstName">
+      Last name: <input type="text" id="lastName">
+      Sprint#: <input type="number" min="1" max="5" id="sprint" placeholder="1-5">
+      <label for="issue">Select Issue:</label>
+        <select id="result" name="issue">
+          <option value="feature">Feature</option>
+          <option value="bug">Bug</option>
+          <option value="task">Task</option>
+        </select>
+        <br>
+        <br>
+      <label for="issue">Select Issue State:</label>
+        <select id="stateResult" name="state">
+          <option value="new">New</option>
+          <option value="inProgress">In progress</option>
+          <option value="feedback">Feedback</option>
+          <option value="rework">Rework</option>
+          <option value="resolved">Resolved</option>
+          <option value="ready">Ready for testing</option>
+        </select>
+        <br>
+        <br>
+      <textarea id="description" placeholder="Task description" maxlength="100"></textarea>
+      <button type="button" class="button-success" onclick="addTask()">Add Task</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

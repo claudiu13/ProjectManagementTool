@@ -1,0 +1,83 @@
+body {
+  background-color: #fffce5;
+  color: black;
+}
+
+h1 {
+  color: black;
+  text-align: left;
+  text-shadow: 1px 1px green;
+}
+
+#task-container {
+  column-count: 5;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 25px;
+  margin: 10px;
+}
+
+.task-card {
+  background-color: white;
+  break-inside: avoid;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 15px 0;
+  overflow: hidden;
+  padding: 10px 10px 50px;
+  position: relative;
+}
+
+.task-card:first-child {
+  margin-top: 0;
+  padding-bottom: 10px;
+}
+
+.task-card h4 {
+  margin: 0;
+  border-bottom: 2px solid #eee;
+}
+
+.task-card p {
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid #eee;
+}
+
+.task-card:not(#add-task-form) button {
+  position: absolute;
+  bottom: 10px;
+}
+.task-card:not(#add-task-form) button:last-of-type {
+  right: 10px;
+}
+
+input, textarea {
+  border: 1px solid #eee;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  padding: 10px;
+  resize: none;
+  width: 90%;
+}
+textarea {
+  height: 75px;
+}
+
+button {
+  border: none;
+  border-radius: 2px;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 20px;
+}
+
+.button-success {
+  background-color: green;
+}
+
+.button-danger {
+  background-color: pink;
+}
